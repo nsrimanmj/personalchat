@@ -1,5 +1,7 @@
 [versions]
 agp = "8.13.2"
+firebaseDatabase = "22.0.1"
+firebaseFirestore = "26.0.2"
 kotlin = "2.3.0"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -13,11 +15,14 @@ firebaseBom = "34.7.0"
 glide = "5.0.5"
 room = "2.8.4"
 gms = "4.4.4"
+firebaseAuthKtx = "24.0.1"
 
 [libraries]
 androidx-compose-material3-core = { module = "androidx.compose.material:material-icons-core" }
 androidx-compose-material3-extended = { module = "androidx.compose.material:material-icons-extended" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+firebase-database = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabase" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -40,6 +45,7 @@ glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "gl
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
