@@ -26,7 +26,7 @@ val OrangeYellowGradient = Brush.horizontalGradient(
 )
 
 @Composable
-fun PersonalChatLoginScreen() {
+fun HomeScreen() {
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var passwordVisible by remember { mutableStateOf(false) }
